@@ -13,7 +13,6 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  height: 2000px;
 }
 
 :root {
@@ -65,6 +64,7 @@ html {
 .difference {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8rem;
 }
 .difference__content {
   padding: 4rem;
@@ -102,6 +102,111 @@ html {
 .difference .reason--heading {
   font-weight: bold;
   margin-bottom: 15px;
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.testimonials__heading h1 {
+  font-size: 4.5rem;
+  margin-bottom: 8rem;
+}
+.testimonials__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+.testimonials__items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f4f4;
+  padding: 2rem;
+  flex: 0 0 30%;
+}
+.testimonials__items .item img {
+  height: 5rem;
+  width: 5rem;
+  margin-top: -4.5rem;
+}
+.testimonials__items .item h3 {
+  margin: 2.5rem 0;
+}
+.testimonials__items .item p {
+  text-align: center;
+  font-size: var(--font-size-primary);
+}
+
+.start {
+  margin-top: 15rem;
+  background-color: #f3613c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 12rem;
+}
+.start h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  flex: 0 0 40%;
+}
+.start button {
+  background-color: #fff !important;
+  color: #f3613c !important;
+  width: 12rem;
+}
+
+.site-footer {
+  background-color: #000;
+  padding: 5rem 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.site-footer__contact .site-logo {
+  margin-bottom: 5rem;
+}
+.site-footer__contact .social-contact img:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.site-footer__items {
+  font-size: 1.5rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.site-footer__items .item {
+  flex: 1 1 50%;
+  margin-bottom: 10px;
+}
+.site-footer__items .item a {
+  text-decoration: none;
+  color: #fff;
+}
+.site-footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.site-footer__copyright form .form-email {
+  border-radius: 500px;
+  font-size: 2rem;
+  padding: 2rem;
+  height: 3rem;
+  width: 20rem;
+  outline: none;
+  border: none;
+}
+.site-footer__copyright form .form-submit {
+  width: 7rem;
+}
+.site-footer__copyright p {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 3rem;
 }
 
 .btn-main {

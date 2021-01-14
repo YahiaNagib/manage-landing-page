@@ -26,6 +26,7 @@
 .difference {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8rem;
   &__content {
     padding: 4rem;
     flex: 0 0 40%;
@@ -42,8 +43,6 @@
 
   &__reasons {
     flex: 0 0 50%;
-    // display: flex;
-    // flex-direction: column;
   }
 
   .reason {
@@ -71,4 +70,63 @@
   }
 }
 
+.testimonials {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
+  &__heading h1 {
+    font-size: 4.5rem;
+    margin-bottom: 8rem;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #f8f4f4;
+      padding: 2rem;
+      flex: 0 0 30%;
+      img {
+        height: 5rem;
+        width: 5rem;
+        margin-top: -4.5rem;
+      }
+
+      h3 {
+        margin: 2.5rem 0;
+      }
+
+      p {
+        text-align: center;
+        font-size: var(--font-size-primary);
+      }
+    }
+  }
+}
+
+.start {
+  margin-top: 15rem;
+  background-color: #f3613c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 12rem;
+
+  h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    flex: 0 0 40%;
+  }
+
+  button {
+    background-color: #fff !important;
+    color: #f3613c !important;
+    width: 12rem;
+  }
+}
